@@ -19,13 +19,19 @@ export default class RollDice extends Component {
     const updateDie1 = this.randomDieValue();
     const updateDie2 = this.randomDieValue();
     this.setState({rolling: true});
+    // set dice value
     setTimeout(() => {
       this.setState({
         die1: updateDie1,
-        die2: updateDie2,
-        rolling: false
+        die2: updateDie2
       })
     }, 500);
+    // allow roll button to be clicked again
+    setTimeout(() => {
+      this.setState({
+        rolling: false
+      })
+    }, 1500);
   }
 
   render() {
@@ -35,7 +41,12 @@ export default class RollDice extends Component {
           <Die number={this.state.die1} rolling={this.state.rolling}/>
           <Die number={this.state.die2} rolling={this.state.rolling}/>
         </div>
-        <button className="RollDice--btn" onClick={this.rollDiceHandler}>{this.state.rolling ? 'Rolling...' : 'Roll Dice!'}</button>
+        <button
+          className="RollDice--btn"
+          onClick={this.rollDiceHandler}
+          disabled={this.state.rolling}>
+            {this.state.rolling ? 'Rolling...' : 'Roll Dice!'}
+        </button>
       </div>
     )
   }
