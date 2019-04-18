@@ -43,8 +43,5 @@ code {
 button,
 button:focus {
   cursor: pointer;
-  border: none;
   outline:0;
-  color: inherit;
-  font-size: inherit;
 }
