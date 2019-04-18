@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import './Die.css';
 
 const die = props => {
   return (
-    <div></div>
+    <div className="Die">
+      <i className={`fas fa-dice-${props.number}`}></i>
+    </div>
   )
 }
 
