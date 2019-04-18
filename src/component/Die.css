@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10rem;
-  width: 10rem;
+  height: 20rem;
+  width: 20rem;
 
   color: plum;
-  font-size: 10rem;
+  font-size: 20rem;
 }

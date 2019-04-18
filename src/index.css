@@ -39,3 +39,12 @@ code {
 #root {
   height: 100%;
 }
+
+button,
+button:focus {
+  cursor: pointer;
+  border: none;
+  outline:0;
+  color: inherit;
+  font-size: inherit;
+}

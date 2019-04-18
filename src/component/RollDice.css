@@ -1,0 +1,30 @@
+.RollDice {
+  margin: 0 auto;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.RollDice--dice-container {
+  margin-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.RollDice--btn {
+  padding: 2rem 3.8rem;
+  background: #555;
+  border: .2rem solid black;
+  border-radius: .8rem;
+  color: white;
+
+  transition: all 200ms;
+}
+
+.RollDice--btn:hover {
+  background: mediumslateblue;
+}
